@@ -1,0 +1,74 @@
+
+
+header {
+    background-color: white;
+    height: 60px;
+    @include flexbox();
+
+
+
+    nav {
+        @include flexbox(space-between, center, row);
+        @include container;
+
+        ul {
+            list-style: none;
+            display: none;
+            @include media-up(md){
+                @include flexbox();
+                gap: 15px;
+                
+               
+                
+            }
+           
+            
+            
+
+           
+
+            li {
+                a {
+                    text-decoration: none;
+                    font-weight: 600;
+                    color: $mainColor;
+
+                    &:hover {
+                        color: $linkColor;
+                    }
+                }
+
+            }
+        }
+
+        .icons {
+            display: none;
+            @include media-up(md){
+               
+                gap: 15px;
+                display: flex;
+            }
+            
+            
+
+            a {
+                color: $mainColor;
+
+                &:hover {
+                    color: $secondaryColor;
+
+                }
+            }
+            i {
+                font-size: 22px;
+            }
+        }
+        .mobil-nav-icon {
+            display: flex;
+            cursor: pointer;
+            @include media-up(md){
+                display: none;
+            }
+        }
+    }
+}
