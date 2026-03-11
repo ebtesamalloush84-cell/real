@@ -6,19 +6,21 @@
   padding-right: 15px;
   padding-left: 15px;
 }
-@media (min-width: 576px) {
+@media (min-width: 767px) {
   .container {
-    max-width: 540px;
+    /* max-width: 576px; */
+    flex-direction: column;
   }
 }
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 1023px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .container {
-    max-width: 960px;
+    /* max-width: 960px; */
+    display: flex;
   }
 }
 @media (min-width: 1200px) {
@@ -202,7 +204,7 @@ header nav {
 }
 @media (min-width: 768px) {
   header nav {
-    max-width: 720px;
+    max-width: 768px;
   }
 }
 @media (min-width: 992px) {
